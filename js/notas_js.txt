@@ -1,0 +1,1 @@
+El proyecto está desarrollado íntegramente con HTML5 y CSS3 sin JavaScript externo.

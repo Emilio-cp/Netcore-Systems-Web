@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Solicita presupuesto o consulta técnica en NETCORE SYSTEMS.">
+    <title>Contacto y Presupuestos | NETCORE SYSTEMS</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <div class="contenedor-cabecera">
+            <a href="../index.html"><img src="../img/logo.png" alt="NETCORE SYSTEMS" width="260" height="56"></a>
+            <span class="texto-cabecera">Servidores CPD, switches gestionables y preconfiguración a medida</span>
+        </div>
+    </header>
+
+    <nav aria-label="Menú principal">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="servidores.html">Servidores</a></li>
+            <li><a href="redes.html">Redes y Seguridad</a></li>
+            <li><a href="contacto.html" class="activo">Contacto y Presupuestos</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="contenido-principal">
+            <div class="migas">
+                <a href="../index.html">Inicio</a> / Contacto y Presupuestos
+            </div>
+
+            <section>
+                <h1>Contacto y solicitud de presupuesto</h1>
+                <p>
+                    Rellena este formulario con los equipos que necesitas y los datos básicos de tu red para enviarte una oferta detallada.
+                </p>
+
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Datos de contacto</legend>
+
+                        <div class="grupo-campo">
+                            <label for="nombre">Nombre y apellidos *</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ej. Javier Morales" required>
+                        </div>
+
+                        <div class="grupo-campo">
+                            <label for="correo">Correo electrónico *</label>
+                            <input type="email" id="correo" name="correo" placeholder="nombre@empresa.es" required>
+                        </div>
+
+                        <div class="grupo-campo">
+                            <label for="telefono">Teléfono *</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="600 123 456" required>
+                        </div>
+
+                        <div class="grupo-campo opciones-linea">
+                            <label>Perfil del cliente</label>
+                            <label><input type="radio" name="perfil" value="empresa" checked> Empresa / PYME</label>
+                            <label><input type="radio" name="perfil" value="integrador"> Integrador IT</label>
+                            <label><input type="radio" name="perfil" value="centro"> Centro educativo / Organismo</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Equipamiento y configuración</legend>
+
+                        <div class="grupo-campo">
+                            <label for="equipo">Equipo principal</label>
+                            <select id="equipo" name="equipo">
+                                <option value="r420">SERVIDOR RACK NETCORE R420-PRO</option>
+                                <option value="t150">SERVIDOR TORRE NETCORE T150-PYME</option>
+                                <option value="sw48">SWITCH GESTIONABLE L3 NETCORE SW-48G-POE+</option>
+                                <option value="fw200">FIREWALL PERIMETRAL NETCORE FW-200</option>
+                                <option value="varios">Varios equipos / Proyecto completo</option>
+                            </select>
+                        </div>
+
+                        <div class="grupo-campo">
+                            <label for="cantidad">Unidades estimadas</label>
+                            <input type="number" id="cantidad" name="cantidad" min="1" max="50" value="1">
+                        </div>
+
+                        <div class="grupo-campo">
+                            <label for="fecha">Fecha aproximada de entrega</label>
+                            <input type="date" id="fecha" name="fecha">
+                        </div>
+
+                        <div class="grupo-campo opciones-linea">
+                            <label>Opciones de preconfiguración</label>
+                            <label><input type="checkbox" name="prep[]" value="raid" checked> Montaje RAID</label>
+                            <label><input type="checkbox" name="prep[]" value="vlan" checked> Direccionamiento IP y VLANs</label>
+                            <label><input type="checkbox" name="prep[]" value="firmware" checked> Actualización de firmware</label>
+                            <label><input type="checkbox" name="prep[]" value="soporte"> SOPORTE TÉCNICO ON-SITE 24/7</label>
+                        </div>
+
+                        <div class="grupo-campo">
+                            <label for="comentarios">Observaciones técnicas</label>
+                            <textarea id="comentarios" name="comentarios" rows="5" placeholder="Indica aquí si necesitas algún hipervisor instalado, número de VLANs o capacidad de disco concreta..."></textarea>
+                        </div>
+                    </fieldset>
+
+                    <button type="submit" class="btn">Enviar consulta</button>
+                    <button type="reset" class="btn btn-gris">Borrar datos</button>
+                </form>
+            </section>
+        </div>
+
+        <aside>
+            <h2>Dónde estamos</h2>
+            <p>
+                <strong>NETCORE SYSTEMS S.L.</strong><br>
+                Calle Isaac Newton, 4<br>
+                Parque Tecnológico Cartuja<br>
+                41092 Sevilla<br>
+                Tel: 954 00 11 22<br>
+                info@netcoresystems.es
+            </p>
+
+            <h2>Mapa de ubicación</h2>
+            <iframe
+                title="Mapa de ubicación NETCORE SYSTEMS"
+                height="240"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-6.015%2C37.402%2C-5.995%2C37.416&amp;layer=mapnik&amp;marker=37.409%2C-6.005">
+            </iframe>
+            <p><a href="https://www.openstreetmap.org/?mlat=37.409&amp;mlon=-6.005#map=16/37.409/-6.005" target="_blank" rel="noopener noreferrer">Ver mapa más grande</a></p>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="contenedor-footer">
+            <div>
+                <p><strong>NETCORE SYSTEMS S.L.</strong> — Infraestructura IT y equipamiento de red</p>
+                <p>Parque Tecnológico Cartuja, Sevilla · info@netcoresystems.es</p>
+            </div>
+            <div class="enlaces-footer">
+                <a href="../index.html">Inicio</a>
+                <a href="servidores.html">Servidores</a>
+                <a href="redes.html">Redes</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="../rss/feed.rss">RSS</a>
+                <a href="../rss/atom.xml">Atom</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

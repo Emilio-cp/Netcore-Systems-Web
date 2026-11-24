@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>NETCORE SYSTEMS - Catálogo de Equipamiento IT</title>
+  <subtitle>Nuevos servidores y electrónica de red en stock.</subtitle>
+  <link href="https://www.netcoresystems.es/rss/atom.xml" rel="self"/>
+  <link href="https://www.netcoresystems.es/index.html"/>
+  <updated>2026-02-03T10:00:00+01:00</updated>
+  <id>urn:uuid:60a76c80-d399-11d9-b93C-0003939e0af6</id>
+  <author>
+    <name>NETCORE SYSTEMS</name>
+    <email>info@netcoresystems.es</email>
+  </author>
+  <entry>
+    <title>SERVIDOR RACK NETCORE R420-PRO disponible con SERVICIO DE PRECONFIGURACIÓN EN LABORATORIO</title>
+    <link href="https://www.netcoresystems.es/html/servidores.html"/>
+    <id>urn:uuid:1225c695-cfb8-4ebb-aaaa-80da344efa6a</id>
+    <updated>2026-02-02T12:00:00+01:00</updated>
+    <summary>Servidor 2U con doble procesador Intel Xeon, 128 GB DDR5 ECC y entrega preconfigurada.</summary>
+  </entry>
+</feed>

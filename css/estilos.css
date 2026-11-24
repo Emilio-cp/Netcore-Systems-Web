@@ -1,0 +1,362 @@
+/* Hoja de estilos principal - NETCORE SYSTEMS */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #222222;
+    line-height: 1.55;
+    font-size: 15px;
+}
+
+/* Cabecera y menú de navegación superior */
+header {
+    background-color: #162436;
+    color: #ffffff;
+    padding: 16px 0;
+}
+
+.contenedor-cabecera {
+    width: 92%;
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.texto-cabecera {
+    font-size: 13px;
+    color: #cbd5e1;
+}
+
+nav {
+    background-color: #22354d;
+    border-bottom: 3px solid #2563eb;
+}
+
+nav ul {
+    width: 92%;
+    max-width: 1080px;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 18px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav ul li a:hover,
+nav ul li a.activo {
+    background-color: #2563eb;
+}
+
+/* Contenedor general de la página */
+main {
+    width: 92%;
+    max-width: 1080px;
+    margin: 24px auto;
+    display: flex;
+    gap: 28px;
+    align-items: flex-start;
+}
+
+/* Columna principal y barra lateral sin sombreado */
+.contenido-principal {
+    flex: 1;
+    background-color: #ffffff;
+}
+
+aside {
+    width: 280px;
+    background-color: #ffffff;
+    padding: 18px;
+    border: 1px solid #d1d5db;
+    font-size: 14px;
+}
+
+/* En páginas sin barra lateral (fichas técnicas de producto) */
+main.ancho-completo .contenido-principal {
+    width: 100%;
+}
+
+/* Ruta de navegación (migas de pan) */
+.migas {
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 16px;
+}
+
+.migas a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.migas a:hover {
+    text-decoration: underline;
+}
+
+/* Encabezados y párrafos */
+h1 {
+    font-size: 24px;
+    color: #162436;
+    margin-bottom: 14px;
+}
+
+h2 {
+    font-size: 19px;
+    color: #162436;
+    margin-top: 26px;
+    margin-bottom: 12px;
+}
+
+h3 {
+    font-size: 16px;
+    color: #1e3a8a;
+    margin-bottom: 8px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+section {
+    margin-bottom: 28px;
+}
+
+/* Listado de productos en 2 columnas sin sombreado */
+.lista-productos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 14px;
+}
+
+article.ficha-resumen {
+    flex: 1 1 300px;
+    background-color: #ffffff;
+    padding: 16px;
+    border: 1px solid #d1d5db;
+}
+
+figure {
+    margin-bottom: 12px;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    font-size: 12px;
+    color: #64748b;
+    margin-top: 5px;
+}
+
+.precio {
+    font-size: 16px;
+    font-weight: bold;
+    color: #0f172a;
+    margin: 10px 0;
+}
+
+/* Botones sencillos */
+.btn {
+    display: inline-block;
+    background-color: #2563eb;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 14px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-top: 6px;
+}
+
+.btn:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-gris {
+    background-color: #4b5563;
+}
+
+.btn-gris:hover {
+    background-color: #374151;
+}
+
+/* Tablas limpias sin sombreado alterno */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0 20px 0;
+    font-size: 14px;
+}
+
+caption {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #334155;
+}
+
+th, td {
+    border: 1px solid #d1d5db;
+    padding: 9px 11px;
+    text-align: left;
+}
+
+thead th {
+    background-color: #162436;
+    color: #ffffff;
+}
+
+/* Elementos de la barra lateral <aside> */
+aside h2 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #162436;
+}
+
+aside h2:not(:first-child) {
+    margin-top: 22px;
+}
+
+aside ul {
+    padding-left: 18px;
+    margin-bottom: 14px;
+}
+
+aside li {
+    margin-bottom: 7px;
+}
+
+aside a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
+
+/* Multimedia sin sombreado */
+.caja-media {
+    margin: 14px 0;
+    padding: 16px;
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;
+}
+
+audio, video {
+    width: 100%;
+    margin-top: 8px;
+}
+
+iframe {
+    width: 100%;
+    border: 1px solid #d1d5db;
+    margin-top: 8px;
+}
+
+/* Formulario */
+form fieldset {
+    border: 1px solid #d1d5db;
+    padding: 16px;
+    margin-bottom: 18px;
+}
+
+form legend {
+    font-weight: bold;
+    padding: 0 6px;
+    color: #162436;
+}
+
+.grupo-campo {
+    margin-bottom: 13px;
+}
+
+.grupo-campo label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.grupo-campo input[type="text"],
+.grupo-campo input[type="email"],
+.grupo-campo input[type="tel"],
+.grupo-campo input[type="number"],
+.grupo-campo input[type="date"],
+.grupo-campo select,
+.grupo-campo textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #cbd5e1;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.opciones-linea label {
+    display: inline-block;
+    font-weight: normal;
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #162436;
+    color: #cbd5e1;
+    padding: 22px 0;
+    margin-top: 35px;
+    font-size: 13px;
+}
+
+.contenedor-footer {
+    width: 92%;
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.enlaces-footer a {
+    color: #93c5fd;
+    text-decoration: none;
+    margin-right: 14px;
+}
+
+.enlaces-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Adaptación móvil */
+@media (max-width: 800px) {
+    main {
+        flex-direction: column;
+    }
+    aside {
+        width: 100%;
+    }
+}

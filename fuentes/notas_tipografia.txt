@@ -1,0 +1,2 @@
+Tipografía principal: Arial, Helvetica, sans-serif.
+Tipografía monoespaciada para comandos e IPs: Consolas, Courier New, monospace.
